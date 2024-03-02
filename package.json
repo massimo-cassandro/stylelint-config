@@ -8,6 +8,9 @@
   "scripts": {
     "npm-publish": "npm publish"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/massimo-cassandro/stylelint-config.git#main"
