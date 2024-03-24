@@ -1,3 +1,4 @@
 2022-04-28T10:00:00.000Z |            1.0.0 | First release (on old linters-config repo)
 2024-03-02T17:02:44.973Z |            1.1.0 | First release on new repository
 2024-03-02T18:42:44.973Z |            1.1.1 | Readme upd
+2024-03-24T15:39:40.672Z |            1.1.2 | Added tailwind `theme` to `function-no-unknown` -> ignoreFunctions`

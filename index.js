@@ -64,7 +64,12 @@ module.exports = {
     'comment-empty-line-before': null,
     'font-family-name-quotes': 'always-where-recommended',
 
-
+    'function-no-unknown': [true,
+      {
+        // tailwind
+        ignoreFunctions: ['theme']
+      }
+    ],
     'function-url-no-scheme-relative': true,
     'function-url-quotes': 'always',
 

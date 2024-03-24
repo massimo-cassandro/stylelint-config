@@ -1,11 +1,13 @@
 {
   "name": "@massimo-cassandro/stylelint-config",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "my stylelint config",
   "author": "Massimo Cassandro",
   "license": "MIT",
   "main": "index.js",
   "scripts": {
+    "UPD-version": "npx update-version #--config=./dev-utilities.config.mjs",
+    "upd@m": "npx upd@m",
     "npm-publish": "npm publish"
   },
   "publishConfig": {
@@ -24,5 +26,10 @@
   ],
   "files": [
     "index.js"
-  ]
+  ],
+  "devDependencies": {
+    "@massimo-cassandro/dev-updater": "^1.0.0",
+    "@massimo-cassandro/eslint-config": "^1.1.0",
+    "eslint": "^8.57.0"
+  }
 }

@@ -18,7 +18,7 @@ Create a `.stylelintrc.cjs` file (or use any other name you like, following the 
 /* eslint-env node */
 
 module.exports = {
-  'extends': '@massimo-cassandro/stylelint-config'
+  extends: '@massimo-cassandro/stylelint-config'
 };
 ```
 
@@ -28,8 +28,8 @@ Optionally you can extends your `.stylelintrc` file with other configuration (se
 /* eslint-env node */
 
 module.exports = {
-  'extends': [ 'stylelint-config-recommended', 'stylelint-config-recommended-scss', 'stylelint-order', '@massimo-cassandro/stylelint-config']
+  extends: [ 'stylelint-config-recommended', 'stylelint-config-recommended-scss', 'stylelint-order', '@massimo-cassandro/stylelint-config']
 };
 ```
 
-(NB: you don't need to add `stylelint-config-standard` as it is included in [stylelint-config-twbs-bootstrap](https://github.com/twbs/stylelint-config-twbs-bootstrap) )
+(NB: note that `stylelint-config-standard` is included in [stylelint-config-twbs-bootstrap](https://github.com/twbs/stylelint-config-twbs-bootstrap) )
