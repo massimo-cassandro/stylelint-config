@@ -353,7 +353,7 @@ module.exports = {
   },
   'overrides': [
     {
-      'files': ['**/*.scss', '**/*module.scss'],
+      'files': ['**/*.scss'],
       // 'extends': ['stylelint-config-twbs-bootstrap/'],
       'rules': {
 
@@ -419,7 +419,7 @@ module.exports = {
       }
     },
     {
-      'files': ['**/*module.scss', '**/*module.css'],
+      'files': ['**/*.module.scss', '**/*.module.css'],
       'extends': [/* 'stylelint-config-twbs-bootstrap/', */ 'stylelint-config-css-modules'],
       'rules': {
         'selector-class-pattern': [
