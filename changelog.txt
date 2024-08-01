@@ -3,3 +3,4 @@
 2024-03-02T18:42:44.973Z |            1.1.1 | Readme upd
 2024-03-24T15:39:40.672Z |            1.1.2 | Added tailwind `theme` to `function-no-unknown` -> ignoreFunctions`
 2024-04-30T13:31:04.034Z |            1.1.3 | Fix
+2024-08-01T15:17:52.986Z |            1.1.4 | upd dependencies
