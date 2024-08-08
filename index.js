@@ -73,6 +73,8 @@ module.exports = {
     'function-url-no-scheme-relative': true,
     'function-url-quotes': 'always',
 
+    'import-notation': null,
+
     'max-nesting-depth': [
       3,
       {
