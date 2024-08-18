@@ -32,12 +32,16 @@ module.exports = {
           'screen',
           'config',
 
+          // postcss
+          'define-mixin',
+          'mixin',
+
           // sass
           'extend',
           'include',
           'if',
           'else',
-          'mixin',
+          // 'mixin',
           'function',
           'at-root',
           'use',
