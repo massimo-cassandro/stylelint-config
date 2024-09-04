@@ -1,10 +1,10 @@
 {
   "name": "@massimo-cassandro/stylelint-config",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "description": "my stylelint config",
   "author": "Massimo Cassandro",
   "license": "MIT",
-  "main": "index.js",
+  "main": "index.cjs",
   "scripts": {
     "UPD-version": "npx update-version #--config=./dev-utilities.config.mjs",
     "upd@m": "npx upd@m",
@@ -25,17 +25,19 @@
     "stylelint"
   ],
   "files": [
-    "index.js"
+    "index.cjs"
   ],
   "peerDependencies": {
-    "@stylistic/stylelint-plugin": "^3.0.0",
-    "stylelint": "^16.8.1",
+    "@stylistic/stylelint-plugin": "^3.0.1",
+    "stylelint": "^16.9.0",
     "stylelint-config-css-modules": "^4.4.0",
-    "stylelint-config-twbs-bootstrap": "^14.2.0"
+    "stylelint-config-twbs-bootstrap": "^15.0.0"
   },
   "devDependencies": {
+    "@eslint/js": "^9.9.1",
     "@massimo-cassandro/dev-updater": "^1.0.4",
-    "@massimo-cassandro/eslint-config": "^1.1.1",
-    "eslint": "^8.57.0"
+    "@massimo-cassandro/eslint-config": "^2.0.4",
+    "eslint": "^9.9.1",
+    "globals": "^15.9.0"
   }
 }

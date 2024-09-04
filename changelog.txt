@@ -6,3 +6,4 @@
 2024-08-01T15:17:52.986Z |            1.1.4 | upd dependencies
 2024-08-08T12:56:59.062Z |            1.1.5 | import-notation rule
 2024-08-18T13:57:04.879Z |            1.1.6 | added postcss at-rules
+2024-09-04T19:33:18.989Z |            1.1.7 | Upd dependencies
