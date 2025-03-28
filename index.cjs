@@ -84,6 +84,7 @@ module.exports = {
     'function-url-no-scheme-relative': true,
     'function-url-quotes': 'always',
 
+    'hue-degree-notation': null,
     'import-notation': null,
 
     'max-nesting-depth': [
