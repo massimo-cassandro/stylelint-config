@@ -7,3 +7,4 @@
 2024-08-08T12:56:59.062Z |            1.1.5 | import-notation rule
 2024-08-18T13:57:04.879Z |            1.1.6 | added postcss at-rules
 2024-09-04T19:33:18.989Z |            1.1.7 | Upd dependencies
+2025-03-29T12:59:46.642Z |            1.1.8 | angle notation upd
