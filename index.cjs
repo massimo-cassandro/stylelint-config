@@ -10,10 +10,12 @@ module.exports = {
     '@stylistic/stylelint-plugin'
   ],
   'ignoreFiles': [
-    '**/node_modules/**/*.*',
-    '**/vendor/**/*.*',
-    '**/build/**/*.*',
-    '**/dist/**/*.*'
+    'node_modules/**/*.*',
+    'vendor/**/*.*',
+    'build/**/*.*',
+    'public/**/*.*',
+    'templates/**/*.*',
+    'dist/**/*.*'
   ],
 
   'rules': {
