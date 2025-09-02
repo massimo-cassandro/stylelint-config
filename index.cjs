@@ -1,5 +1,6 @@
 /* eslint-env node */
 
+
 module.exports = {
   extends: [
     'stylelint-config-twbs-bootstrap/'
@@ -121,14 +122,21 @@ module.exports = {
       }
     ],
     'selector-no-vendor-prefix': true,
-    'shorthand-property-no-redundant-values': true,
+    'selector-pseudo-class-no-unknown': [
+      true,
+      {
+        "ignorePseudoClasses": ["global"]
+      }
+    ],
 
+    'shorthand-property-no-redundant-values': true,
     // 'shorthand-property-no-redundant-values': [
     //   true,
     //   {
     //     ignoreShorthands: [ /^grid-/ ]
     //   }
     // ],
+
 
     // =>> stylistic
     // https://github.com/elirasza/stylelint-stylistic
@@ -232,7 +240,7 @@ module.exports = {
           {
             resolveNestedSelectors: true
           }
-        ],
+        ]
       }
     }
   ]
