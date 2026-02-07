@@ -14,3 +14,4 @@
 2026-01-25T15:04:19.942Z |           1.1.12 | peer dependencies removed
 2026-02-07T18:40:26.968Z |            2.0.0 | eliminazione config twb, sintassi ESM
 2026-02-07T18:57:35.069Z |            2.0.1 | Fix
+2026-02-07T20:15:33.451Z |            2.0.2 | fix

@@ -1,6 +1,6 @@
 {
   "name": "@massimo-cassandro/stylelint-config",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "my stylelint config",
   "author": "Massimo Cassandro",
   "license": "MIT",
@@ -39,6 +39,7 @@
     "@stylistic/stylelint-config": "^4.0.0",
     "@stylistic/stylelint-plugin": "^5.0.1",
     "stylelint": "^17.1.1",
+    "stylelint-config-css-modules": "^4.6.0",
     "stylelint-config-recess-order": "^7.6.0",
     "stylelint-config-standard": "^40.0.0",
     "stylelint-config-standard-scss": "^17.0.0",
