@@ -9,8 +9,7 @@ Previous versions at <https://github.com/massimo-cassandro/linters-config>.
 Install `styleint` and the other nedeed packages:
 
 ```bash
-npm install -D @massimo-cassandro/stylelint-config stylelint @stylistic/stylelint-plugin stylelint-config-css-modules stylelint-config-twbs-bootstrap
-```
+npm install -D stylelint @massimo-cassandro/stylelint-config
 
 Create a `.stylelintrc.cjs` file (or use any other name you like, following the instructions at <https://stylelint.io/user-guide/configure>) and add:
 
