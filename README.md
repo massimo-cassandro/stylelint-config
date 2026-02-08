@@ -2,33 +2,44 @@
 
 My [stylelint](https://stylelint.io/) config,
 
-Previous versions at <https://github.com/massimo-cassandro/linters-config>.
 
 ## Use
 
-Install `styleint` and the other nedeed packages:
+Install package:
 
 ```bash
 npm install -D stylelint @massimo-cassandro/stylelint-config
+```
 
-Create a `.stylelintrc.cjs` file (or use any other name you like, following the instructions at <https://stylelint.io/user-guide/configure>) and add:
+Create a `stylelint.config.mjs` file and add:
 
 ```javascript
-/* eslint-env node */
+export default {
+  extends: [
+    '@massimo-cassandro/stylelint-config',
+  ],
 
-module.exports = {
-  extends: '@massimo-cassandro/stylelint-config'
+  // Files to be ignored
+  ignoreFiles: [
+    'node_modules/**/*.{css,scss}',
+    'vendor/**/*.{css,scss}',
+    'templates/**/*.{css,scss}',
+    'dist/**/*.css',
+    'build/**/*.css',
+    'public/**/*.css',
+    'test/**/*.css'
+  ],
+
+  // Overrides
+  rules: {
+    //********************** optionally for tailwind:
+    // 'at-rule-no-unknown': [
+    //   true,
+    //   'value-keyword-case': null,
+    //   '@stylistic/number-no-trailing-zeros': null
+    // ],
+    //********************** /tailwind
+  }
 };
 ```
 
-Optionally you can extends your `.stylelintrc` file with other configuration (see <https://stylelint.io/user-guide/configure/#extends>): 
-
-```javascript
-/* eslint-env node */
-
-module.exports = {
-  extends: [ 'stylelint-config-recommended', 'stylelint-config-recommended-scss', 'stylelint-order', '@massimo-cassandro/stylelint-config']
-};
-```
-
-(NB: note that `stylelint-config-standard` is included in [stylelint-config-twbs-bootstrap](https://github.com/twbs/stylelint-config-twbs-bootstrap) )
