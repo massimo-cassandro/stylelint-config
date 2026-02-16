@@ -110,6 +110,7 @@ export default {
   overrides: [
     {
       files: ['**/*.scss'],
+      plugins: ['stylelint-scss'],
       extends: [
         'stylelint-config-standard-scss',
         'stylelint-config-recess-order'
