@@ -1,14 +1,15 @@
 {
   "name": "@massimo-cassandro/stylelint-config",
-  "version": "2.1.2",
+  "version": "2.2.0",
   "description": "my stylelint config",
   "author": "Massimo Cassandro",
   "license": "MIT",
-  "main": "index.cjs",
+  "main": "index.js",
   "type": "module",
   "scripts": {
     "UPD-version": "npx update-version #--config=./dev-utilities.config.mjs",
     "upd@m": "npx upd@m",
+    "npm-upd": "npm update --save",
     "npm-publish": "npm publish"
   },
   "publishConfig": {
@@ -30,7 +31,7 @@
   ],
   "devDependencies": {
     "@eslint/js": "^10.0.1",
-    "@massimo-cassandro/dev-updater": "^3.0.1",
+    "@massimo-cassandro/dev-updater": "^3.0.2",
     "@massimo-cassandro/eslint-config": "^2.0.8",
     "eslint": "^10.0.0",
     "globals": "^17.3.0"
@@ -38,9 +39,9 @@
   "dependencies": {
     "@stylistic/stylelint-config": "^4.0.0",
     "@stylistic/stylelint-plugin": "^5.0.1",
-    "stylelint": "^17.1.1",
+    "stylelint": "^17.3.0",
     "stylelint-config-css-modules": "^4.6.0",
-    "stylelint-config-recess-order": "^7.6.0",
+    "stylelint-config-recess-order": "^7.6.1",
     "stylelint-config-standard": "^40.0.0",
     "stylelint-config-standard-scss": "^17.0.0",
     "stylelint-scss": "^7.0.0"

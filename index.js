@@ -1,4 +1,8 @@
 /** @type {import('stylelint').Config} */
+
+const tailwindAtRules = ['tailwind', 'apply', 'layer', 'variants', 'responsive', 'screen', 'config'],
+  postCSSRules = ['define-mixin', 'mixin'];
+
 export default {
   extends: [
     'stylelint-config-standard',
@@ -25,13 +29,8 @@ export default {
       true,
       {
         ignoreAtRules: [
-          // Tailwind CSS
-          'tailwind', 'apply', 'layer', 'variants', 'responsive', 'screen', 'config',
-          // PostCSS
-          'define-mixin', 'mixin',
-          // SCSS
-          'extend', 'include', 'if', 'else', 'function', 'at-root',
-          'use', 'forward', 'each', 'while', 'for', 'error', 'warn', 'debug', 'return'
+          ...tailwindAtRules,
+          ...postCSSRules
         ]
       }
     ],
@@ -124,22 +123,24 @@ export default {
         'scss/at-if-closing-brace-newline-after': null,
         'scss/at-if-closing-brace-space-after': null,
         'scss/at-if-no-null': null,
-        'scss/at-import-no-partial-leading-underscore': null,
-        'scss/at-import-partial-extension': 'never',
         'scss/at-mixin-argumentless-call-parentheses': 'always',
         'scss/at-mixin-named-arguments': null,
         'scss/at-mixin-parentheses-space-before': 'never',
         'scss/at-mixin-pattern': null,
         'scss/at-rule-conditional-no-parentheses': null,
+        'scss/load-no-partial-leading-underscore': true,
+        'scss/load-partial-extension': 'never',
+
+        'at-rule-no-unknown': null, // disabilita regola base per evitare conflitti
         'scss/at-rule-no-unknown': [
           true,
           {
             ignoreAtRules: [
-              // Tailwind CSS
-              'tailwind', 'apply', 'layer', 'variants', 'responsive', 'screen', 'config',
+              ...tailwindAtRules,
+              ...postCSSRules,
               // SCSS
-              'extend', 'include', 'if', 'else', 'mixin', 'function', 'at-root', 'use',
-              'forward', 'each', 'while', 'for', 'error', 'warn', 'debug', 'return'
+              'extend', 'include', 'if', 'else', 'function', 'at-root',
+              'use', 'forward', 'each', 'while', 'for', 'error', 'warn', 'debug', 'return'
             ]
           }
         ],
