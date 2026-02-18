@@ -24,62 +24,52 @@ export default {
   rules: {
 
     'alpha-value-notation': null,
+    'at-rule-empty-line-before': null,
     'at-rule-no-vendor-prefix': true,
-    'at-rule-no-unknown': [
-      true,
-      {
-        ignoreAtRules: [
-          ...tailwindAtRules,
-          ...postCSSRules
-        ]
-      }
-    ],
+    'at-rule-no-unknown': [ true, { ignoreAtRules: [ ...tailwindAtRules, ...postCSSRules ] } ],
+    'color-function-notation': null,
     'color-named': 'never',
     'comment-empty-line-before': null,
+    'custom-property-empty-line-before': null,
+    'custom-property-pattern': null,
+    'declaration-block-no-redundant-longhand-properties': null,
+    'declaration-empty-line-before': null,
     'declaration-no-important': true,
     'font-family-name-quotes': 'always-where-recommended',
+    'font-weight-notation': ['numeric', { ignore: ['relative'] }],
     'function-no-unknown': [true, { ignoreFunctions: ['theme'] }],
+    'function-url-no-scheme-relative': true,
     'function-url-quotes': 'always',
+    'hue-degree-notation': null,
     'import-notation': null,
     'max-nesting-depth': [3, {
       ignore: ['pseudo-classes', 'blockless-at-rules'],
       ignoreAtRules: [/media/, /include/],
       ignorePseudoClasses: ['before', 'after']
     }],
-    'selector-attribute-quotes': 'always',
-    'selector-class-pattern': ['^[a-z][a-z0-9\\-]*[a-z0-9]$', { resolveNestedSelectors: true }],
-    'selector-max-type': [3, { ignore: ['child', 'compounded', 'descendant', 'next-sibling'] }],
-    'selector-max-universal': 1,
-    'selector-no-qualifying-type': true,
-    'selector-no-vendor-prefix': true,
-    'selector-pseudo-class-no-unknown': [true, { ignorePseudoClasses: ['global'] }],
-    'shorthand-property-no-redundant-values': true,
-    'value-keyword-case': ['lower', { ignoreKeywords: ['currentColor'] }],
-    'value-no-vendor-prefix': true,
-
-    // --- da stylelint-config-twbs-bootstrap ---
-    'at-rule-empty-line-before': null,
-    'color-function-notation': null,
-    'custom-property-empty-line-before': null,
-    'custom-property-pattern': null,
-    'declaration-block-no-redundant-longhand-properties': null,
-    'declaration-empty-line-before': null,
-    'font-weight-notation': ['numeric', { ignore: ['relative'] }],
-    'function-url-no-scheme-relative': true,
-    'hue-degree-notation': null,
     'media-feature-range-notation': null,
     'media-query-no-invalid': null,
     'no-descending-specificity': null,
     'number-max-precision': null,
     'property-no-vendor-prefix': true,
     'rule-empty-line-before': null,
+    'selector-attribute-quotes': 'always',
+    'selector-class-pattern': ['^[a-z][a-z0-9\\-]*[a-z0-9]$', { resolveNestedSelectors: true }],
     'selector-max-attribute': 2,
     'selector-max-class': 4,
     'selector-max-combinators': 4,
     'selector-max-compound-selectors': 4,
     'selector-max-id': 0,
     'selector-max-specificity': null,
+    'selector-max-type': [3, { ignore: ['child', 'compounded', 'descendant', 'next-sibling'] }],
+    'selector-max-universal': 1,
+    'selector-no-qualifying-type': null, // https://stylelint.io/user-guide/rules/selector-no-qualifying-type/
+    'selector-no-vendor-prefix': true,
     'selector-not-notation': null,
+    'selector-pseudo-class-no-unknown': [true, { ignorePseudoClasses: ['global'] }],
+    'shorthand-property-no-redundant-values': true,
+    'value-keyword-case': ['lower', { ignoreKeywords: ['currentColor'] }],
+    'value-no-vendor-prefix': true,
 
     // --- Stylistic ---
     '@stylistic/at-rule-name-space-after': 'always',
