@@ -32,7 +32,7 @@
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "@massimo-cassandro/dev-updater": "^3.0.2",
-    "@massimo-cassandro/eslint-config": "^2.0.8",
+    "@massimo-cassandro/eslint-config": "^3.0.2",
     "eslint": "^10.0.0",
     "globals": "^17.3.0"
   },
