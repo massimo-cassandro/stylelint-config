@@ -27,7 +27,7 @@ export default {
     'at-rule-empty-line-before': null,
     'at-rule-no-vendor-prefix': true,
     'at-rule-no-unknown': [ true, { ignoreAtRules: [ ...tailwindAtRules, ...postCSSRules ] } ],
-    'color-function-notation': null,
+    'color-function-notation': 'modern',
     'color-named': 'never',
     'comment-empty-line-before': null,
     'custom-property-empty-line-before': null,

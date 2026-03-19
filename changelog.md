@@ -5,3 +5,4 @@
 * 2.0.0 (07 feb 2026) - eliminazione config twb, sintassi ESM
 * 2.1.0 (08 feb 2026) - dependabot
 * 2.2.0 (17 feb 2026) - Upd regole stylelint/scss
+* 2.3.0 (19 mar 2026) - color-function-notation': 'modern'
