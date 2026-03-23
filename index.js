@@ -93,7 +93,7 @@ export default {
     '@stylistic/unicode-bom': 'never',
     '@stylistic/value-list-comma-newline-after': 'always-multi-line',
     '@stylistic/value-list-comma-newline-before': 'never-multi-line',
-    '@stylistic/value-list-comma-space-after': 'always',
+    '@stylistic/value-list-comma-space-after': null,
     '@stylistic/value-list-max-empty-lines': 3
   },
   overrides: [
