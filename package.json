@@ -37,7 +37,7 @@
     "globals": "^17.4.0"
   },
   "dependencies": {
-    "@stylistic/stylelint-config": "^4.0.0",
+    "@stylistic/stylelint-config": "^5.0.0",
     "@stylistic/stylelint-plugin": "^5.0.1",
     "stylelint": "^17.4.0",
     "stylelint-config-css-modules": "^4.6.0",
