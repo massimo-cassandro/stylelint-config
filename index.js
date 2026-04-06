@@ -155,13 +155,36 @@ export default {
     },
     {
       files: ['**/*.module.scss', '**/*.module.css'],
-      extends: ['stylelint-config-css-modules'],
+      plugins: ['stylelint-scss'],
+      extends: [
+        'stylelint-config-css-modules',
+        'stylelint-config-standard-scss',
+        'stylelint-config-recess-order'
+      ],
       rules: {
         'selector-class-pattern': [
           '^[a-z]+(_?[A-Z]?[a-z0-9]*)*$',
           {
-            ignoreSelectors: [/:global/],
+            // intero selettore :global(...) o blocco :global senza parentesi
+            ignoreSelectors: [
+              /^:global\(.*\)$/,  // es. :global(.MyClass)
+              /^:global$/         // es. :global usato come blocco
+            ],
             resolveNestedSelectors: true
+          }
+        ],
+
+        'no-invalid-position-at-import-rule': null,
+        'at-rule-no-unknown': null, // disabilita regola base per evitare conflitti
+        'scss/at-rule-no-unknown': [
+          true,
+          {
+            ignoreAtRules: [
+              ...tailwindAtRules,
+              ...postCSSRules,
+              'extend', 'include', 'if', 'else', 'function', 'at-root',
+              'use', 'forward', 'each', 'while', 'for', 'error', 'warn', 'debug', 'return'
+            ]
           }
         ]
       }
