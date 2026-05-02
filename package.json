@@ -1,6 +1,6 @@
 {
   "name": "@massimo-cassandro/stylelint-config",
-  "version": "2.3.5",
+  "version": "2.3.6",
   "description": "my stylelint config",
   "author": "Massimo Cassandro",
   "license": "MIT",
@@ -32,15 +32,15 @@
   ],
   "devDependencies": {
     "@eslint/js": "^10.0.1",
-    "@massimo-cassandro/dev-updater": "^3.0.2",
-    "@massimo-cassandro/eslint-config": "^3.0.4",
-    "eslint": "^10.2.0",
-    "globals": "^17.4.0"
+    "@massimo-cassandro/dev-updater": "^3.0.3",
+    "@massimo-cassandro/eslint-config": "^3.0.6",
+    "eslint": "^10.3.0",
+    "globals": "^17.6.0"
   },
   "dependencies": {
     "@stylistic/stylelint-config": "^5.0.0",
     "@stylistic/stylelint-plugin": "^5.1.0",
-    "stylelint": "^17.6.0",
+    "stylelint": "^17.9.1",
     "stylelint-config-css-modules": "^4.6.0",
     "stylelint-config-recess-order": "^7.7.0",
     "stylelint-config-standard": "^40.0.0",
