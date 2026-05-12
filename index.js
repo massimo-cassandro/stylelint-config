@@ -166,5 +166,20 @@ export default {
         ]
       }
     }
+    // da testare
+    // {
+    //   files: ['**/*.module.scss', '**/*.module.css'],
+    //   extends: ['stylelint-config-css-modules'],
+    //   rules: {
+    //     'selector-class-pattern': [
+    //       '^([a-z][a-z0-9]*([A-Z][a-z0-9]*)*|[a-z][a-z0-9-]*)$',
+    //       { resolveNestedSelectors: true }
+    //     ],
+    //     'selector-pseudo-class-no-unknown': [
+    //       true,
+    //       { ignorePseudoClasses: ['global', 'local'] }
+    //     ]
+    //   }
+    // }
   ]
 };
