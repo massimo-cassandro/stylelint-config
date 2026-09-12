@@ -1,5 +1,7 @@
 # Stylelint config
 
+> Not maintained. Merged into [minimo](https://github.com/massimo-cassandro/minimo)
+
 My [stylelint](https://stylelint.io/) config,
 
 
